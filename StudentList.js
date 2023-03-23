@@ -3,12 +3,12 @@ import React from 'react'
 export const StudentList = ({ list }) => {
     return (
         <>
-            {list.map(item => (
-               <ol key={item} >
+            {list.map(user => (
+               <ol key={user.edad}>
                 <p>Datos del estudiante</p>
-                <li>Nombre: {item.nombre}</li>
-                <li>Apellido: {item.apellido}</li>
-                <li>Edad: {item.edad}</li>
+                <li>Nombre: {user.nombre}</li>
+                <li>Apellido: {user.apellido}</li>
+                <li>Edad: {user.edad}</li>
              </ol>
             ))}
         </>
